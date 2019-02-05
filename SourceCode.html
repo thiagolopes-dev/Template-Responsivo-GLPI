@@ -1,0 +1,159 @@
+<center style="width: 100%; table-layout: fixed; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+<table class="conteudo" border="0" width="640" cellspacing="0" cellpadding="10">
+<tbody>
+<tr>
+<td class="header"><br />
+<table style="background-color: #efefef; border: 1px solid #f4f4f4; border-collapse: collapse; font-size: 12px;" width="100%" cellpadding="0">
+<tbody>
+<tr style="border: 1px solid #f4f4f4; border-collapse: collapse; font-size: 12px;">
+<td rowspan="2" width="448"><img src="https://www.santacasadearapongas.com.br/arquivos/sca.png" alt="logomarca" width="68" height="68" /></td>
+<td width="53"><strong>N°: </strong></td>
+<td style="font-size: 14px;" width="110"><strong>##ticket.id##</strong></td>
+</tr>
+<tr style="border: 1px solid #f4f4f4; border-collapse: collapse; font-size: 12px;">
+<td width="53"><strong>Status</strong>:</td>
+<td width="117">##ticket.status##</td>
+</tr>
+</tbody>
+</table>
+<p><span style="padding: 5px 5px; margin: 5px 0px 5px 0px; display: block; background-color: #f5f5f5;">##IFticket.assigntousers## <span style="color: #8b8c8f; font-weight: bold; text-decoration: underline;">Atribuído para</span> : ##ticket.assigntousers## ##ENDIFticket.assigntousers##</span></p>
+<table style="border: 1px solid #f4f4f4; border-collapse: collapse; font-size: 12px;" width="100%" cellpadding="0">
+<tbody>
+<tr>
+<td style="background-color: #ccffcc;" width="620">
+<p style="padding: 5px 5px 5px;"><strong>Solicitação</strong>: ##ticket.title## <br />##ticket.content##</p>
+</td>
+</tr>
+</tbody>
+</table>
+<br /><br />
+<table style="border: 1px solid #f4f4f4; border-collapse: collapse; font-size: 12px;" width="100%" cellpadding="0">
+<tbody>
+<tr>
+<td style="background-color: #9fd6ed; background-image: url('http://10.9.1.211/glpi/pics/timeline/solution.png'); background-repeat: no-repeat; background-position: right; border: 1px solid #f4f4f4; border-collapse: collapse;" colspan="2" width="620">
+<p style="padding: 5px 5px 5px;">##IFticket.storestatus=6##<br />##lang.ticket.solution.description##: ##ticket.solution.description##</p>
+<p style="padding: 5px 5px 5px;"><strong>##lang.ticket.solvedate## :</strong> ##ticket.solvedate##<br />##lang.ticket.autoclosewarning## ##ENDIFticket.storestatus## ##FOREACHfollowups##</p>
+<p style="padding: 5px 5px 5px;"> </p>
+</td>
+</tr>
+<tr style="border: 1px solid #f4f4f4; border-collapse: collapse;">
+<td> </td>
+<td align="right"> </td>
+</tr>
+</tbody>
+</table>
+<br />
+<table style="background-color: #e0e0e0; background-image: url('http://10.9.1.211/glpi/pics/timeline/followup.png'); background-repeat: no-repeat; background-position: right; border: 1px solid #f4f4f4; border-collapse: collapse; font-size: 12px;" width="100%" cellpadding="0">
+<tbody>
+<tr>
+<td style="width: 99.3507%;" colspan="2">
+<p style="padding: 5px 5px 5px;"><strong>Acompanhamento</strong>: [##followup.date##] - ##followup.description##</p>
+</td>
+</tr>
+<tr style="border: 1px solid #f4f4f4; border-collapse: collapse;">
+<td style="width: 30.4113%;"><strong>##lang.followup.isprivate## :</strong></td>
+<td style="width: 68.9394%;" align="left">##followup.isprivate##</td>
+</tr>
+<tr style="border: 1px solid #f4f4f4; border-collapse: collapse;">
+<td style="width: 30.4113%;"><strong>##lang.followup.author## :</strong></td>
+<td style="width: 68.9394%;" align="left">##followup.author##</td>
+</tr>
+<tr style="border: 1px solid #f4f4f4; border-collapse: collapse;">
+<td style="width: 30.4113%;"> </td>
+<td style="width: 68.9394%;" align="left"><strong>##ENDFOREACHfollowups## ##FOREACHtasks##</strong></td>
+</tr>
+<tr style="border: 1px solid #f4f4f4; border-collapse: collapse;">
+<td style="width: 30.4113%;"> </td>
+<td style="width: 68.9394%;" align="left"> </td>
+</tr>
+</tbody>
+</table>
+<br /><br />
+<table style="background-color: #fffbea; background-image: url('http://10.9.1.211/glpi/pics/timeline/task.png'); background-repeat: no-repeat; background-position: right; border: 1px solid #f4f4f4; border-collapse: collapse; font-size: 12px;" width="100%" cellpadding="0">
+<tbody>
+<tr>
+<td colspan="4" bgcolor="">
+<p style="padding: 5px 5px 5px;"><strong>Tarefa</strong>: [##task.date##] - ##task.description##</p>
+</td>
+</tr>
+<tr style="border: 1px solid #f4f4f4; border-collapse: collapse;">
+<td width="145"><strong>##lang.task.isprivate## :</strong></td>
+<td align="left" width="115">##task.isprivate##</td>
+<td align="left" width="141"><strong>##lang.task.time## :</strong></td>
+<td align="left" width="217">##task.time##</td>
+</tr>
+<tr style="border: 1px solid #f4f4f4; border-collapse: collapse;">
+<td width="145"><strong>##lang.task.author## :</strong></td>
+<td align="left" width="115">##task.author##</td>
+<td align="left" width="141"><strong> ##lang.task.category## :</strong></td>
+<td align="left" width="217">##task.category##</td>
+</tr>
+<tr style="border: 1px solid #f4f4f4; border-collapse: collapse;">
+<td width="145"> ##ENDFOREACHtasks##</td>
+<td align="center" width="115"> </td>
+<td align="center" width="141"> </td>
+<td align="center" width="217"> </td>
+</tr>
+</tbody>
+</table>
+<br /><br /></td>
+</tr>
+</tbody>
+</table>
+<!--tabela principal, com a largura do documento-->
+<table class="conteudo" border="0" width="640" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<table style="font-size: 12px;" border="0" width="320" cellspacing="0" cellpadding="10" align="left">
+<tbody>
+<tr>
+<td><span style="padding: 5px 5px; margin: 5px 0px 5px 0px; display: block; background-color: #f5f5f5;"> Solicitado por:##ticket.authors## </span> <span style="padding: 5px 5px; margin: 5px 0px 5px 0px; display: block; background-color: #f5f5f5;">Data de Abertura:##ticket.creationdate##</span> <span style="padding: 5px 5px; margin: 5px 0px 5px 0px; display: block; background-color: #f5f5f5;">Data de Fechamento:##IFticket.closedate## ##ticket.closedate## ##ENDIFticket.closedate## ##ELSEticket.closedate## ------ ##ENDELSEticket.closedate## ##IFticket.numberoffollowups## </span> <span style="padding: 5px 5px; margin: 5px 0px 5px 0px; display: block; background-color: #f5f5f5;">N° de acompanhamentos: ##ticket.numberoffollowups##</span> ##ENDIFticket.numberoffollowups## ##ELSEticket.numberoffollowups## <span style="padding: 5px 5px; margin: 5px 0px 5px 0px; display: block; background-color: #f5f5f5;"> N° de acompanhamentos: 0 </span>##ENDELSEticket.numberoffollowups## ##IFticket.numberoftasks## <span style="padding: 5px 5px; margin: 5px 0px 5px 0px; display: block; background-color: #f5f5f5;"> N° de tarefas: ##ticket.numberoftasks##</span> ##ENDIFticket.numberoftasks## ##ELSEticket.numberoftasks## <span style="padding: 5px 5px; margin: 5px 0px 5px 0px; display: block; background-color: #f5f5f5;"> N° de tarefas: 0</span> ##ENDELSEticket.numberoftasks##</td>
+</tr>
+</tbody>
+</table>
+<table style="font-size: 12px;" border="0" width="320" cellspacing="0" cellpadding="10">
+<tbody>
+<tr>
+<td>
+<p><span style="padding: 5px 5px; margin: 5px 0px 5px 0px; display: block; background-color: #f5f5f5;"> Origem: ##ticket.requesttype##</span></p>
+<p><span style="padding: 5px 5px; margin: 5px 0px 5px 0px; display: block; background-color: #f5f5f5;">Categoria: ##IFticket.category## ##ticket.category## ##ENDIFticket.category## ##ELSEticket.category## ##lang.ticket.nocategoryassigned## ##ENDELSEticket.category## </span><span style="padding: 5px 5px; margin: 5px 0px 5px 0px; display: block; background-color: #f5f5f5;"> Urgência: ##ticket.urgency##</span></p>
+<p><span style="padding: 5px 5px; margin: 5px 0px 5px 0px; display: block; background-color: #f5f5f5;">Impacto: ##ticket.impact## </span></p>
+<p><span style="padding: 5px 5px; margin: 5px 0px 5px 0px; display: block; background-color: #f5f5f5;">Prioridade: ##ticket.priority##</span></p>
+<center><a style="text-decoration: none; color: #fff; background-color: #5d9cec; padding: 10px 16px; font-weight: bold; margin-right: 10px; text-align: center; cursor: pointer; display: inline-block; font-size: 12px;" href="##ticket.url##"> Visualizar chamado online »</a></center></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="conteudo" border="0" width="640" cellspacing="0" cellpadding="5">
+<tbody>
+<tr>
+<td><center><a style="border: 0;" href="http://santacasadearapongas.com.br" target="_blank" rel="noopener"><img src="https://www.santacasadearapongas.com.br/arquivos/sca.png" alt="Logotipo da empresa" width="41" height="41" /></a></center></td>
+</tr>
+<tr>
+<td style="font-size: 10px !important; color: #4a585e;" align="center">License MIT 2018</td>
+</tr>
+</tbody>
+</table>
+</center>
+<div id="CertisignPluginFF-NG-Installed"> </div>
+<div id="CertisignPluginFF-NG-Installed"> </div>
+<div id="CertisignPluginFF-NG-Installed"> </div>
+<div id="CertisignPluginFF-NG-Installed"> </div>
+<div id="CertisignPluginFF-NG-Installed"> </div>
+<div id="CertisignPluginFF-NG-Installed"> </div>
+<div id="CertisignPluginFF-NG-Installed"> </div>
+<div id="CertisignPluginFF-NG-Installed"> </div>
+<div id="CertisignPluginFF-NG-Installed"> </div>
+<div id="CertisignPluginFF-NG-Installed"> </div>
+<div id="CertisignPluginFF-NG-Installed"> </div>
+<div id="CertisignPluginFF-NG-Installed"> </div>
+<div id="CertisignPluginFF-NG-Installed"> </div>
+<div id="CertisignPluginFF-NG-Installed"> </div>
+<div id="CertisignPluginFF-NG-Installed"> </div>
+<div id="CertisignPluginFF-NG-Installed"> </div>
+<div id="CertisignPluginFF-NG-Installed"> </div>
+<div id="CertisignPluginFF-NG-Installed"> </div>

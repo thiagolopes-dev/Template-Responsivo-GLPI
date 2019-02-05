@@ -1,0 +1,20 @@
+<style type="text/css">
+		body{height:100% !important; margin:0; padding:0; width:100% !important;}
+		*, a{font-family: Arial, sans-serif; text-decoration:none;}
+		 
+		 conteudo-header{
+         max-width: 100%; 
+         min-width: 620px;
+         }
+         @media only screen and (max-device-width: 480px) {
+         table[class=conteudo] { 
+         width:340px !important;
+         float:center!important;
+         }
+         td[class=header] img {
+         height:auto !important;
+         width:100% !important;
+         }
+         }
+
+      </style>

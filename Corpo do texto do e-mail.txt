@@ -1,0 +1,104 @@
+N°: 
+##ticket.id##
+
+Status:
+##ticket.status##
+
+##IFticket.assigntousers## Atribuído para : ##ticket.assigntousers## ##ENDIFticket.assigntousers##
+
+Solicitação: ##ticket.title## 
+ ##ticket.content##
+
+##IFticket.storestatus=6##
+##lang.ticket.solution.description##: ##ticket.solution.description##
+
+##lang.ticket.solvedate## : ##ticket.solvedate##
+ ##lang.ticket.autoclosewarning## ##ENDIFticket.storestatus## ##FOREACHfollowups##
+
+
+Acompanhamento: [##followup.date##] - ##followup.description##
+
+
+##lang.followup.isprivate## :
+##followup.isprivate##
+
+
+##lang.followup.author## :
+##followup.author##
+
+ 
+##ENDFOREACHfollowups## ##FOREACHtasks##
+
+
+Tarefa: [##task.date##] - ##task.description##
+
+
+
+##lang.task.isprivate## :
+##task.isprivate##
+##lang.task.time## :
+##task.time##
+
+
+##lang.task.author## :
+##task.author##
+ ##lang.task.category## :
+##task.category##
+
+
+ ##ENDFOREACHtasks##
+ 
+ Solicitado por:##ticket.authors##  Data de Abertura:##ticket.creationdate## Data de Fechamento:##IFticket.closedate## ##ticket.closedate## ##ENDIFticket.closedate## ##ELSEticket.closedate## ------ ##ENDELSEticket.closedate## ##IFticket.numberoffollowups##  N° de acompanhamentos: ##ticket.numberoffollowups## ##ENDIFticket.numberoffollowups## ##ELSEticket.numberoffollowups##  N° de acompanhamentos: 0 ##ENDELSEticket.numberoffollowups## ##IFticket.numberoftasks##  N° de tarefas: ##ticket.numberoftasks## ##ENDIFticket.numberoftasks## ##ELSEticket.numberoftasks##  N° de tarefas: 0 ##ENDELSEticket.numberoftasks##
+
+
+
+ Origem: ##ticket.requesttype##
+
+Categoria: ##IFticket.category## ##ticket.category## ##ENDIFticket.category## ##ELSEticket.category## ##lang.ticket.nocategoryassigned## ##ENDELSEticket.category##  Urgência: ##ticket.urgency##
+
+Impacto: ##ticket.impact## 
+
+Prioridade: ##ticket.priority##
+ Visualizar chamado online »
+
+
+
+License MIT 2018
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
